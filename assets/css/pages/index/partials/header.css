@@ -10,6 +10,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--cor-secundaria-1);
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   align-items: center;

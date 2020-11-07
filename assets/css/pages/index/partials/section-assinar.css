@@ -1,0 +1,127 @@
+/*
+
+INDEX partials SECTION ASSINAR
+
+*/
+
+section.assinar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  background-color: var(--cor-primaria-1);
+  background-image: linear-gradient(90deg, #d3094c, #E7004C);
+  position: relative;
+  height: 550px;
+  min-height: 550px;
+  max-height: 550px;
+}
+
+/* Titulo */
+
+section.assinar .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+section.assinar .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 3rem;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 700px;
+}
+
+section.assinar .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  padding: 20px 0px 30px 0px;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+section.assinar .titulo button {
+  font-family: var(--fonte-bold);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  background-color: var(--cor-secundaria-1);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+section.assinar .titulo button:hover {
+  box-shadow: 0px 0px 30px 0px var(--cor-primaria-3);
+}
+
+/* Imagem */
+
+section.assinar img.desktop {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 550px;
+  pointer-events: none;
+  display: flex;
+}
+
+section.assinar img.mobile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-height: 500px;
+  pointer-events: none;
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.assinar {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+  }
+  section.assinar .titulo h2 {
+    font-size: 2rem;
+    max-width: 500px;
+  }
+  section.assinar .titulo p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  section.assinar .titulo button {
+    font-size: 1.1rem;
+  }
+  section.assinar img.desktop {
+    display: none;
+  }
+  section.assinar img.mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.assinar .titulo {
+    align-items: flex-start;
+    text-align: left;
+  }
+  section.assinar .titulo h2 {
+    font-size: 1.7rem;
+    max-width: 400px;
+  }
+  section.assinar .titulo p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+}

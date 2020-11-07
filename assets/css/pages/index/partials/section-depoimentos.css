@@ -1,0 +1,154 @@
+/*
+
+INDEX partials SECTION DEPOIMENTOS
+
+*/
+
+section.depoimentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria-3);
+  min-height: 100vh;
+}
+
+/* Titulo */
+
+section.depoimentos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  width: 80%;
+}
+
+section.depoimentos .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 3rem;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 500px;
+}
+
+section.depoimentos .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* Alunos */
+
+section.depoimentos .alunos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-secundaria-1);
+  min-height: 100vh;
+  padding: 100px;
+}
+
+section.depoimentos .alunos .aluno {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  background-color: var(--cor-secundaria-2);
+  padding: 30px 20px 30px 80px;
+  border-radius: 15px;
+  border: 4px solid var(--cor-primaria-1);
+}
+
+section.depoimentos .alunos .aluno:nth-child(2) {
+  margin: 60px 0px;
+}
+
+section.depoimentos .alunos .aluno img {
+  position: absolute;
+  left: -50px;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--cor-primaria-1);
+}
+
+section.depoimentos .alunos .aluno .texto {
+  overflow-y: scroll;
+  max-height: 80px;
+  height: 80px;
+  min-height: 80px;
+}
+
+section.depoimentos .alunos .aluno .texto p {
+  font-family: var(--fonte-medium);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  padding-right: 10px;
+}
+
+section.depoimentos .alunos .aluno span {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-primaria-1);
+  padding-top: 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.depoimentos .alunos .aluno .texto p {
+    font-size: 1rem;
+  }
+  section.depoimentos .alunos .aluno span {
+    font-size: 0.9rem;
+  }
+  section.depoimentos {
+    flex-direction: column;
+    min-height: 100%;
+  }
+  section.depoimentos .titulo {
+    padding: 100px 30px;
+    width: 100%;
+  }
+  section.depoimentos .titulo h2 {
+    font-size: 2rem;
+    max-width: 300px;
+  }
+  section.depoimentos .titulo p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section.depoimentos .alunos .aluno img {
+    left: 38%;
+    top: -50px;
+  }
+  section.depoimentos .alunos .aluno {
+    padding: 80px 20px 30px 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  section.depoimentos .alunos .aluno .texto {
+    max-height: 100px;
+    height: 100px;
+    min-height: 100px;
+  }
+  section.depoimentos .alunos {
+    min-height: 100%;
+    padding: 100px 30px;
+  }
+}
