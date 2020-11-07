@@ -1,0 +1,95 @@
+/*
+
+INDEX partials LOADING
+
+*/
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: var(--cor-secundaria-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: progress;
+}
+
+body.carregando {
+  overflow: hidden;
+}
+
+.loading.ocultar {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading svg {
+  width: 100%;
+  max-width: 300px;
+}
+
+.loading svg path {
+  fill: var(--cor-primaria-1);
+  opacity: 0;
+}
+
+.logo_onm_um {
+  animation: opacidade 30s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.logo_onm_dois {
+  animation: opacidade 30s linear infinite;
+  animation-delay: 0.4s;
+}
+
+.logo_onm_tres {
+  animation: opacidade 30s linear infinite;
+  animation-delay: 0.6s;
+}
+
+/* Animations */
+
+@keyframes opacidade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,69 @@
+/*
+
+INDEX partials FOOTER
+
+*/
+
+footer {
+  background-color: var(--cor-primaria-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+footer .social img {
+  width: 100%;
+  max-width: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .copyright p {
+  font-family: var(--fonte-bold);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  padding-bottom: 10px;
+}
+
+footer .uteis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .uteis span {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  background-color: var(--cor-primaria-4);
+  margin: 0px 15px;
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+footer .uteis p {
+  font-family: var(--fonte-medium);
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  cursor: pointer;
+}
+
+footer .uteis p:hover,
+footer .social img:hover {
+  opacity: 0.4;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 400px) {
+  footer .uteis p {
+    font-size: 0.7rem;
+  }
+  footer .uteis span {
+    margin: 0px 10px;
+  }
+}

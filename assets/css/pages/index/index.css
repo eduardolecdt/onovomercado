@@ -10,9 +10,14 @@ INDEX
 
 @import './partials/header.css';
 @import './partials/nav.css';
+@import './partials/footer.css';
+@import './partials/loading.css';
 
 @import './partials/section-confiamos.css';
 @import './partials/section-barato.css';
 @import './partials/section-motivos.css';
 @import './partials/section-assinar.css';
 @import './partials/section-depoimentos.css';
+@import './partials/section-equipe.css';
+@import './partials/section-preco.css';
+@import './partials/section-perguntas.css';

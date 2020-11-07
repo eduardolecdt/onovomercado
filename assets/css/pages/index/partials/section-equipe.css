@@ -1,0 +1,226 @@
+/*
+
+INDEX partials SECTION EQUIPE
+
+*/
+
+section.equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../../../../images/pages/index/background-header.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--cor-secundaria-1);
+  background-attachment: fixed;
+  padding: 100px 30px;
+}
+
+/* Titulo */
+
+section.equipe .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+section.equipe .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 3rem;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 600px;
+}
+
+section.equipe .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* Professores */
+
+section.equipe .professores {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  width: 100%;
+}
+
+section.equipe .professores .professor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.equipe .professores .professor img {
+  width: 90%;
+  border-radius: 50%;
+  animation: brilho 2s linear infinite;
+}
+
+section.equipe .professores .professor p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-primaria-1);
+  padding: 10px 15px;
+  border-radius: 15px 0px 15px 0px;
+  font-family: var(--fonte-bold);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  margin-top: 25px;
+}
+
+section.equipe .professores .professor.icaro {
+  top: 45%;
+  left: 45%;
+}
+
+section.equipe .professores .professor.eduardo {
+  top: 10%;
+  left: 25%;
+}
+
+section.equipe .professores .professor.gustavo {
+  top: 70%;
+  left: 70%;
+}
+
+section.equipe .professores .professor.fabio {
+  top: 75%;
+  left: 25%;
+}
+
+section.equipe .professores .professor.rodrigo {
+  top: 5%;
+  right: 30%;
+}
+
+section.equipe .professores .professor.felipe {
+  top: 50%;
+  left: 5%;
+}
+
+section.equipe .professores .professor.lucas {
+  top: 20%;
+  right: 5%;
+}
+
+section.equipe .professores .professor.icaro img {
+  animation-delay: 3s;
+}
+
+section.equipe .professores .professor.eduardo img {
+  animation-delay: 5s;
+}
+
+section.equipe .professores .professor.gustavo img {
+  animation-delay: 7s;
+}
+
+section.equipe .professores .professor.fabio img {
+  animation-delay: 1s;
+}
+
+section.equipe .professores .professor.rodrigo img {
+  animation-delay: 4s;
+}
+
+section.equipe .professores .professor.felipe img {
+  animation-delay: 6s;
+}
+
+section.equipe .professores .professor.lucas img {
+  animation-delay: 8s;
+}
+
+@keyframes brilho {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  0% {
+    filter: brightness(100%);
+  }
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.equipe .titulo h2 {
+    font-size: 1.7rem;
+    max-width: 600px;
+  }
+  section.equipe .titulo p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  section.equipe .professores {
+    min-height: 1700px;
+  }
+  section.equipe .professores .professor.icaro {
+    top: 0px;
+    left: 30%;
+    right: 0px;
+  }
+  section.equipe .professores .professor.eduardo {
+    top: 250px;
+    right: 30%;
+    left: 0px;
+  }
+  section.equipe .professores .professor.gustavo {
+    top: 500px;
+    left: 30%;
+    right: 0px;
+  }
+  section.equipe .professores .professor.fabio {
+    top: 750px;
+    right: 30%;
+    left: 0px;
+  }
+  section.equipe .professores .professor.rodrigo {
+    top: 1000px;
+    left: 30%;
+    right: 0px;
+  }
+  section.equipe .professores .professor.felipe {
+    top: 1250px;
+    right: 30%;
+    left: 0px;
+  }
+  section.equipe .professores .professor.lucas {
+    top: 1500px;
+    left: 30%;
+    right: none;
+  }
+  section.equipe .professores .professor {
+    max-width: 180px;
+  }
+  section.equipe .professores .professor img {
+    width: 70%;
+  }
+  section.equipe .professores .professor p {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}

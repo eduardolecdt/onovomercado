@@ -1,0 +1,244 @@
+/*
+
+INDEX partials SECTION PRECO
+
+*/
+
+section.preco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+  background-color: var(--cor-secundaria-4);
+  background-image: linear-gradient(0deg, #011434, #020916);
+  min-height: 100vh;
+}
+
+/* Titulo */
+
+section.preco .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+section.preco .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 2rem;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 800px;
+}
+
+section.preco .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Quadros */
+
+section.preco .quadros {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section.preco .quadros .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 50px 25px 40px 25px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 2px solid var(--cor-primaria-1);
+  position: relative;
+}
+
+section.preco .quadros .quadro h3 {
+  font-family: var(--fonte-bold);
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  padding: 10px 25px;
+  position: absolute;
+  top: -25px;
+  border-radius: 100px;
+}
+
+section.preco .quadros .quadro h2 {
+  font-family: var(--fonte-black);
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+
+section.preco .quadros .quadro h2 span {
+  font-family: var(--fonte-medium);
+  font-size: 1.3rem;
+}
+
+section.preco .quadros .quadro .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+section.preco .quadros .quadro .item img {
+  width: 100%;
+  max-width: 20px;
+  margin-right: 15px;
+}
+
+section.preco .quadros .quadro .item p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro button {
+  font-family: var(--fonte-bold);
+  font-size: 1.1rem;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 40px;
+  padding: 15px 20px;
+}
+
+/* mensal */
+
+section.preco .quadros .quadro.mensal {
+  background-color: var(--cor-primaria-1);
+  margin: 0px 20px;
+}
+
+section.preco .quadros .quadro.mensal h3 {
+  background-color: var(--cor-secundaria-4);
+  border: 4px solid var(--cor-primaria-1);
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.mensal h2 {
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.mensal h2 span {
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.mensal button {
+  background-color: var(--cor-branco);
+  color: var(--cor-primaria-1);
+}
+
+section.preco .quadros .quadro.mensal button:hover {
+  box-shadow: 0px 0px 30px 0px var(--cor-branco);
+}
+
+/* gratis */
+
+section.preco .quadros .quadro.gratis h3 {
+  background-color: var(--cor-secundaria-4);
+  border: 2px solid var(--cor-primaria-1);
+  color: var(--cor-primaria-1);
+}
+
+section.preco .quadros .quadro.gratis h2 {
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.gratis h2 span {
+  color: var(--cor-primaria-1);
+}
+
+section.preco .quadros .quadro.gratis button {
+  background-color: var(--cor-primaria-1);
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.gratis button:hover {
+  box-shadow: 0px 0px 30px 0px var(--cor-primaria-1);
+}
+
+/* anual */
+
+section.preco .quadros .quadro.anual h3 {
+  background-color: var(--cor-secundaria-4);
+  border: 2px solid var(--cor-primaria-1);
+  color: var(--cor-primaria-1);
+}
+
+section.preco .quadros .quadro.anual h2 {
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.anual h2 span {
+  color: var(--cor-primaria-1);
+}
+
+section.preco .quadros .quadro.anual button {
+  background-color: var(--cor-primaria-1);
+  color: var(--cor-branco);
+}
+
+section.preco .quadros .quadro.anual button:hover {
+  box-shadow: 0px 0px 30px 0px var(--cor-primaria-1);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.preco .quadros {
+    align-items: center;
+    flex-direction: column;
+  }
+  section.preco .quadros .quadro.mensal {
+    background-color: var(--cor-primaria-1);
+    margin: 80px 0px;
+  }
+  section.preco .titulo h2 {
+    font-size: 1.7rem;
+    max-width: 800px;
+  }
+  section.preco .titulo p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.preco .quadros .quadro h3 {
+    font-size: 1.1rem;
+  }
+  section.preco .quadros .quadro h2 {
+    font-size: 2.5rem;
+  }
+  section.preco .quadros .quadro h2 span {
+    font-size: 1.2rem;
+  }
+  section.preco .quadros .quadro .item {
+    margin-top: 17px;
+    max-width: 250px;
+  }
+  section.preco .quadros .quadro .item img {
+    max-width: 18px;
+    margin-right: 14px;
+  }
+  section.preco .quadros .quadro .item p {
+    font-size: 0.9rem;
+  }
+}
