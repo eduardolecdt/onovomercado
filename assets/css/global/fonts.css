@@ -5,25 +5,25 @@ FONTES
 */
 
 @font-face {
-  font-family: '';
+  font-family: 'gilroy_black';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/gilroy-black-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: '';
+  font-family: 'gilroy_bold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/gilroy-bold-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: '';
+  font-family: 'gilroy_medium';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/gilroy-medium-webfont.woff') format('woff');
 }

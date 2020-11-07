@@ -9,3 +9,6 @@ INDEX
 /* Partials */
 
 @import './partials/header.css';
+@import './partials/nav.css';
+
+@import './partials/section-confiamos.css';
