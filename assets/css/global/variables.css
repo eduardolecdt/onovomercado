@@ -1,0 +1,49 @@
+/*
+
+VARIVEIS DO APP REDIRECIONE
+
+*/
+
+/* Cores */
+
+:root {
+
+--cor-branco: #FFFFFF;
+--cor-preto: #000000;
+
+}
+
+/* Fontes */
+
+:root {
+
+--fonte-regular: '';
+--fonte-bold: '';
+--fonte-extrabold: '';
+
+}
+
+/* Bordas */
+
+:root {
+
+--borda: 1.75px dashed var(--cor-primaria-4);
+
+}
+
+/* Border Radius */
+
+:root {
+
+--radius: 10px;
+
+}
+
+/* Paddings */
+
+:root {
+
+--padding: 12px 20px;
+
+}
+
